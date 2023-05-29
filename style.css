@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Dosis', sans-serif;
+	background-image: linear-gradient(315deg, #272626 20%, #71302e 100%);
+	color: #fff;
+}
+
+.wrapper {
+	width: 1000px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
+.info {
+	text-align: center;
+	font-size: 30px;
+}
+
+.info h1 {
+	margin-bottom: 10px;
+	font-size: 60px;
+}
+
+.ball-img {
+	position: relative;
+	height: 250px;
+}
+
+.ball-img img {
+	position: absolute;
+	top: 30px;
+	left: 350px;
+	width: 300px;
+	cursor: pointer;
+}
+.question-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 24px;
+}
+
+.question-area h2 {
+	margin-bottom: 10px;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.question-area input {
+	padding: 10px 20px;
+	width: 80%;
+	font-size: 20px;
+	border: 2px  solid #333;
+	border-radius: 8px;
+}
+
+.question-area .answer { 
+margin-top: 30px;
+
+}
+
+.question-area .answer span {
+	font-weight: bold;
+}
+
+.question-area .error {
+	font-weight: bold;
+	color: #d0255b;
+}
+
+.shake-animation {
+	animation: shake 1s 1;}
+
+	@keyframes shake {
+		0% {
+			left: 370px;
+
+		}
+		20% {
+			left: 330px;
+			
+		}
+		40% {
+			left: 370px;
+			
+		}
+		60% {
+			left: 330px;
+			
+		}
+		80% {
+			left: 370px;
+			
+		}
+		100% {
+			left: 330px;
+			
+		}
+	}
